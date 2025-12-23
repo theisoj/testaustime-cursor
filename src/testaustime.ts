@@ -121,7 +121,7 @@ class Testaustime {
     }
 
     commands() {
-        const setapikey = vscode.commands.registerCommand("testaustime.setapikey", async () => {
+        const setapikey = vscode.commands.registerCommand("testaustime-cursor.setapikey", async () => {
             const result = await vscode.window.showInputBox({
                 placeHolder: "Your API key from https://testaustime.fi/profile",
                 password: true,
@@ -132,12 +132,12 @@ class Testaustime {
             }
         });
 
-        const openauthorize = vscode.commands.registerCommand("testaustime.openauthorize", async () => {
+        const openauthorize = vscode.commands.registerCommand("testaustime-cursor.openauthorize", async () => {
             const url = vscode.Uri.parse('https://testaustime.fi/authorize?editor=cursor');
             vscode.env.openExternal(url);
         });
 
-        const openstatusbar = vscode.commands.registerCommand("testaustime.openstatusbar", async () => {
+        const openstatusbar = vscode.commands.registerCommand("testaustime-cursor.openstatusbar", async () => {
             let url;
             if (!this.apikeyValid) {
                 url = vscode.Uri.parse('https://testaustime.fi/authorize?editor=cursor');
@@ -177,7 +177,7 @@ class Testaustime {
         const uriHandler = new TestaustimeUriHandler(this);
         this.context.subscriptions.push(vscode.window.registerUriHandler(uriHandler))
 
-        this.statusbar.command = "testaustime.openstatusbar"
+        this.statusbar.command = "testaustime-cursor.openstatusbar"
         this.statusbar.show();
 
         this.interval = setInterval(() => {
