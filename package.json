@@ -1,14 +1,14 @@
 {
-  "name": "testaustime",
-  "displayName": "Testaustime",
+  "name": "testaustime-cursor",
+  "displayName": "Testaustime for Cursor",
   "version": "0.1.1",
-  "description": "The VSCode extension of Testaustime",
+  "description": "The Cursor extension of Testaustime",
   "main": "dist/index.js",
   "publisher": "testausserveri-ry",
   "icon": "icon.png",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Testaustime/testaustime-vscode.git"
+    "url": "git+https://github.com/Testaustime/testaustime-cursor.git"
   },
   "keywords": [
     "testaustime"
@@ -35,7 +35,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Testaustime/testaustime-vscode/issues"
+    "url": "https://github.com/Testaustime/testaustime-cursor/issues"
   },
   "homepage": "https://testaustime.fi",
   "categories": [
@@ -58,7 +58,7 @@
     "walkthroughs": [
       {
         "id": "testaustime",
-        "title": "Get Started with Testaustime Visual Studio Code extension",
+        "title": "Get Started with Testaustime Cursor extension",
         "description": "Log in to the extension and start tracking your coding time",
         "steps": [
           {
@@ -70,7 +70,7 @@
             ],
             "media": {
               "image": "media/hero.png",
-              "altText": "Visual Studio Code editor on left side with extension enabled. Testaustime.fi statistics page on the right."
+              "altText": "Cursor editor on left side with extension enabled. Testaustime.fi statistics page on the right."
             }
           },
           {
@@ -80,7 +80,7 @@
             "completionEvents": [],
             "media": {
               "image": "media/hero.png",
-              "altText": "Visual Studio Code editor on left side with extension enabled. Testaustime.fi statistics page on the right."
+              "altText": "Cursor editor on left side with extension enabled. Testaustime.fi statistics page on the right."
             }
           }
         ]

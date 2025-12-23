@@ -133,14 +133,14 @@ class Testaustime {
         });
 
         const openauthorize = vscode.commands.registerCommand("testaustime.openauthorize", async () => {
-            const url = vscode.Uri.parse('https://testaustime.fi/authorize?editor=vscode');
+            const url = vscode.Uri.parse('https://testaustime.fi/authorize?editor=cursor');
             vscode.env.openExternal(url);
         });
 
         const openstatusbar = vscode.commands.registerCommand("testaustime.openstatusbar", async () => {
             let url;
             if (!this.apikeyValid) {
-                url = vscode.Uri.parse('https://testaustime.fi/authorize?editor=vscode');
+                url = vscode.Uri.parse('https://testaustime.fi/authorize?editor=cursor');
             } else {
                 url = vscode.Uri.parse('https://testaustime.fi');
             }
